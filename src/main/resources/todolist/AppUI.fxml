@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="556.0" maxWidth="687.0" minWidth="-Infinity" prefHeight="556.0" prefWidth="687.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.AppUIController">
+   <children>
+      <AnchorPane maxHeight="563.0" maxWidth="687.0" minHeight="549.0" minWidth="648.0" prefHeight="556.0" prefWidth="648.0" style="-fx-background-color: rgba(74, 94, 128);" VBox.vgrow="ALWAYS">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <AnchorPane layoutX="197.0" layoutY="6.0" prefHeight="543.0" prefWidth="484.0" style="-fx-background-color: rgb(255, 255, 255); -fx-background-radius: 10;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <AnchorPane layoutX="15.0" prefHeight="88.0" prefWidth="452.0" style="-fx-border-color: black; -fx-border-width: 0 0 3 0;">
+                     <children>
+                        <Label fx:id="TodaysDate" layoutX="8.0" layoutY="5.0" prefHeight="77.0" prefWidth="266.0" text="Welcome" textFill="#514f4f">
+                           <font>
+                              <Font size="45.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="36.0" layoutY="118.0" prefHeight="26.0" prefWidth="106.0" text="TO DO :" textFill="#575454" underline="true">
+                     <font>
+                        <Font name="Arial Black" size="17.0" />
+                     </font>
+                  </Label>
+                  
+                  <ListView fx:id="toDisplayItems" editable="true" fixedCellSize="40.0" layoutX="7.0" layoutY="151.0" prefHeight="392.0" prefWidth="473.0" style="-fx-background-color: rgba(255, 255, 255); -fx-background-radius: 10;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ListView>
+                  <Button layoutX="403.0" layoutY="116.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: rgba(74, 94, 128);" text="DELETE " textFill="#070707" underline="true" wrapText="true" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="8.0" layoutY="21.0" prefHeight="60.0" prefWidth="161.0" style="-fx-font-size: 40;" text="OnTrack" textFill="#1b1a1a" underline="true" wrapText="true" />
+            <Label layoutX="12.0" layoutY="81.0" prefHeight="17.0" prefWidth="140.0" text="Welcome Back : -)" textFill="#aeaeae" wrapText="true" />
+            <Button layoutX="8.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: rgba(74, 94, 128); -fx-font-family: &quot;Helvetica&quot;; -fx-alignment: left;" text="All Tasks" textFill="WHITE" underline="true" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="12.0" layoutY="190.0" mnemonicParsing="false" onAction="#tommorrowList" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="TOMMORROW" textFill="WHITE" underline="true" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="12.0" layoutY="244.0" mnemonicParsing="false" onAction="#importantList" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="IMPORTANT" textFill="#eeeeee" underline="true" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="12.0" layoutY="128.0" mnemonicParsing="false" onAction="#todaysList" prefHeight="49.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="TODAY" textFill="WHITE" underline="true" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="12.0" layoutY="298.0" mnemonicParsing="false" onAction="#displayAllTasks" prefHeight="49.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="ALL Tasks" textFill="#f2f2f2" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="12.0" layoutY="414.0" mnemonicParsing="false" onAction="#addnewTask" prefHeight="42.0" prefWidth="119.0" style="-fx-background-color: transparent;" text="Add Task" textFill="#e4e2e2" underline="true" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

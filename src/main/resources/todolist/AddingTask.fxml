@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="605.0" style="-fx-background-color: rgba(25, 48, 84,0.85);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.AppUIController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="61.0" prefHeight="307.0" prefWidth="580.0" style="-fx-background-radius: 39; -fx-background-color: rgba(66, 135, 245, 0.7);">
+         <children>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="36.0" prefWidth="574.0" text="TASK TO ADD" textFill="WHITE" underline="true" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userTask" layoutX="17.0" layoutY="39.0" onAction="#getTask" prefHeight="62.0" prefWidth="547.0" promptText="add task to your list">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextField>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="118.0" prefHeight="36.0" prefWidth="227.0" text="DUE DATE" textFill="WHITE" underline="true" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="329.0" layoutY="118.0" prefHeight="36.0" prefWidth="174.0" text="LEVEL OF IMPORTANT" textFill="WHITE" underline="true" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="userDueDate" layoutX="24.0" layoutY="152.0" onAction="#getDueDate" prefHeight="36.0" prefWidth="227.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
+            <RadioButton fx:id="userLevelHigh" layoutX="329.0" layoutY="154.0" mnemonicParsing="false" onAction="#getLevelOfImportant" text="HIGH" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="levelOfImportant" />
+               </toggleGroup>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></RadioButton>
+            <RadioButton fx:id="userLevelMiddle" layoutX="329.0" layoutY="180.0" mnemonicParsing="false" onAction="#getLevelOfImportant" text="MIDEAN" textFill="WHITE" toggleGroup="$levelOfImportant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></RadioButton>
+            <RadioButton fx:id="userLevelLow" layoutX="329.0" layoutY="206.0" mnemonicParsing="false" onAction="#getLevelOfImportant" text="LOW" textFill="WHITE" toggleGroup="$levelOfImportant" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></RadioButton>
+            <Button layoutX="329.0" layoutY="240.0" mnemonicParsing="false" onAction="#addItem" prefHeight="36.0" prefWidth="205.0" style="-fx-background-color: a547b8; -fx-border-radius: 30; -fx-background-radius: 30;" text="ADD" textFill="#fff9f9" underline="true" wrapText="true">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="64.0" layoutY="240.0" mnemonicParsing="false" onAction="#backButtion" prefHeight="37.0" prefWidth="205.0" style="-fx-background-color: a547b8; -fx-background-radius: 30;" text="BACK" textFill="#fffdfd" underline="true" wrapText="true">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="endMassage" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="364.0" prefHeight="86.0" prefWidth="574.0" text="ADDING TASK....." textFill="#cdc2c2">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="62.0" prefWidth="605.0" text="OnTrack" textFill="#fffafa" underline="true" wrapText="true">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
