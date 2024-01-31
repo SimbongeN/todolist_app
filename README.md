@@ -30,11 +30,11 @@ will provide instruction shortly
 
 ## Contributing
 
-We welcome contributions! If you would like to contribute to **Todolist App**, please check out our [contribution guidelines](CONTRIBUTING.md).
+We welcome contributions! If you would like to contribute to **Todolist App**.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/SimbongeN/todolist_app/blob/main/LICENSE) file for details.
 
 ## Contact
 
