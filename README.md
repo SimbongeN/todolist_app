@@ -1,8 +1,8 @@
-# Todolist App
+#OnTrack [Todolist App]
 
 ## Overview
 
-**Todolist App** is a desktop application designed to help users manage their tasks efficiently. The application allows users to organize their to-do list based on due dates, providing a straightforward solution for task management on the desktop platform.
+**OnTrack** is a todolist App that is a desktop application designed to help users manage their tasks efficiently. The application allows users to organize their to-do list based on due dates, providing a straightforward solution for task management on the desktop platform.
 
 ## Features
 
