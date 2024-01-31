@@ -21,7 +21,7 @@
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/SimbongeN/todolist_appgit`
+1. Clone the repository: `git clone https://github.com/SimbongeN/todolist_app.git`
 2. Navigate to the project directory: `cd todolist_app`
 
 ### Usage
