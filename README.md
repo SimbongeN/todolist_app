@@ -27,7 +27,7 @@
 ### Application UI
 
 #### Home page
-![Alt text](images/example.png)
+![picture of application home page](main/pictures/Screenshot%202024-02-01%20164240.png)
 
 
 ## Contributing
