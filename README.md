@@ -24,9 +24,11 @@
 1. Clone the repository: `git clone https://github.com/SimbongeN/todolist_app.git`
 2. Navigate to the project directory: `cd todolist_app`
 
-### Usage
+### Application UI
 
-will provide instruction shortly 
+#### Home page
+![Alt text](images/example.png)
+
 
 ## Contributing
 
