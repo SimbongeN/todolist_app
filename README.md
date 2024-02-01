@@ -27,7 +27,7 @@
 ### Application UI
 
 #### Home page
-![picture of application home page](pictures/Screenshot 2024-02-01 164240.png)
+![picture of application home page]([pictures/Screenshot 2024-02-01 164240.png](https://github.com/SimbongeN/todolist_app/blob/main/pictures/Screenshot%202024-02-01%20164240.png))
 
 
 ## Contributing
