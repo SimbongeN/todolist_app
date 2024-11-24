@@ -40,8 +40,3 @@ We welcome contributions! If you would like to contribute to **Todolist App**.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/SimbongeN/todolist_app/blob/main/LICENSE) file for details.
-
-## Contact
-
-for enquires or feedback you can cantact me on simbongendlovu47@gmail.com
-
